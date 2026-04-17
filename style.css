@@ -1,0 +1,15 @@
+body{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    max-width: 400px;
+    margin: 40px auto;
+}
+input{
+    padding: 6px;
+}
+button{
+    padding: 6px 10px;
+    margin-left: 5px;
+}
+li{
+    margin-top: 8px;
+}
