@@ -1,15 +1,80 @@
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url(fonts/UcCm3FwrK3iLTcvnUwkT9nA2.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
 body{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-size: 28px;
     max-width: 400px;
     margin: 40px auto;
+    color: #444939;
+
+    background: #F9FAF0;
 }
+
 input{
-    padding: 6px;
+    align-content: flex-start;
+    font-size: 20px;
+    padding: 10px 20px;
+    row-gap: 10px;
+
+    width: 200px;
+
+    background: #CADBA4;
+    border-radius: 9px;
+    border-color: #CADBA4;
+    color: #444939;
 }
-button{
-    padding: 6px 10px;
-    margin-left: 5px;
+
+::placeholder{
+    font-style: 600;
+    font-size: 20px;
+    align-self: auto;
+
+    color: #65715b;
+    border-color: #CADBA4;
 }
+
 li{
-    margin-top: 8px;
+    list-style-type: none;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.task-text{
+    font-size: 20px;
+    padding: 10px 10px;
+
+    background: #ECEDDE;
+    border-radius: 10px;
+    color: #444939;
+}
+
+#addBtn{
+    font-size: 20px;
+    padding: 10px 20px;
+    background: #CADBA4;
+    border: 0px;
+    border-radius: 12px;
+    color: #444939;
+    border-color: #CADBA4;
+}
+
+.delete-btn{
+    font-size: 20px;
+    padding: 10px 10px; /*отступ внутри*/
+    margin-left: 5px;  /*отступ снаружи*/
+    background: #CADBA4;
+    border-radius: 6px;
+}
+.delete-btn svg {
+    height: auto;
+}
+.task-done{
+    text-decoration: line-through;
+    opacity: 0.5;
 }

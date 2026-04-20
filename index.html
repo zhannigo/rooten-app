@@ -3,13 +3,20 @@
     <head>
         <meta charset="UTF-8" />
         <title> Rooten app </title>
-        <link rel="stylessheet" href="style.css"/>
+        <link rel="stylesheet" href="style.css"/>
     </head>
-</html>
 <body>
-    <h1>Список задач</h1>
-    <input id="taskInput" type="text" placeholder="Новая задача">
-    <button id="addBtn">Добавить</button>
+    <h1>Сегодня</h1>
+    <div id="filters">
+        <button id="allTasks">Все задачи</button>
+        <button id="activeTasks">Активные</button>
+        <button id="doneTasks">Выполненные</button>
+    </div>
+    <div id="taskControls">
+        <input id="taskInput" type="text" placeholder="Новая задача">
+        <button id="addBtn">Добавить</button>
+    </div>
+    
     <ul id="taskList"></ul>
     <script src="script.js"></script>
 </body>
